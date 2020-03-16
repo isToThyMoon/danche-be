@@ -33,7 +33,7 @@ def login():
             
             return jsonify({'code': 0, 'emp_name': user.cadmin_name})
         return jsonify({'code': 1, 'message': 'not have this cadmin'})
-    return ''
+    return '没你这个用户'
 
 @web.route('/loginout')
 @login_required
